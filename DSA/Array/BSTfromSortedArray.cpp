@@ -1,96 +1,97 @@
 // Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
 
-
-// ------------------not solved-------------------
-
-#include<iostream>
-#include<queue>
-#include<vector>
+#include <iostream>
+#include <queue>
+#include <vector>
 using namespace std;
-
-class node{
-      public:
-      int data;
-      node* left;
-      node* right;
-      node(int val){
-            this->data=val;
-            this->left=nullptr;
-            this->right=nullptr;
-      }
-};
-
-class BST
+struct TreeNode
 {
-      private:
-      node* root=nullptr;
-      vector<int> ans;
-       
-      void insertInAns(){
-            node* temp=root;
-            node* prev=nullptr;
-            while(temp){
-                  if(prev){
-                    temp=prev;
-                    prev=temp->left;
-                    temp=temp->right;
-                  }
-                  if(temp->data){
-                        ans.push_back(temp->data);
-                  }
-                  prev=temp;
-                  temp=temp->left;
-                  ans.push_back(temp->data);
-            }
+      int val;
+      TreeNode *left;
+      TreeNode *right;
+      TreeNode()
+      {
+            val = 0;
+            left = nullptr;
+            right = nullptr;
       }
-       void InsertInBst(int data,node*& root){
-       if(root==nullptr)
-       {
-        node* temp=new node(data);
-        root=temp;
-
-        return ;
-       }
-
-     if(data<root->data)
-     {
-        InsertInBst(data,root->left);
-        
-     }
-     else{
-        InsertInBst(data,root->right);
-        
-     }
-   }
-    public:
-      vector<int> print(){
-            insertInAns();
-            return ans;
+      TreeNode(int v)
+      {
+            val = v;
+            left = nullptr;
+            right = nullptr;
       }
-      void input(int data){
-            InsertInBst(data,root);
+      TreeNode(int v, TreeNode *l, TreeNode *r)
+      {
+            val = v;
+            left = l;
+            right = r;
       }
 };
-
-int main(){
-      int arr[5]={-10,-3,0,5,9};
-      int mid=(0+4)/2;
-      BST b;
-      b.input(arr[mid]);
-
-      for(int i=0;i<5;i++)
+TreeNode *buildBST(vector<int> &nums, int left, int right)
+{
+      // Base case: no elements
+      if (left > right)
       {
-            if(i!=mid){
-                  b.input(arr[i]);
-            }
+            return nullptr;
       }
 
-      vector<int> ans=b.print();
-      for (int i = 0; i < ans.size(); i++)
-      {
-            cout<<ans[i]<<",";
-      }
-      
+      // Middle element
+      int mid = left + (right - left) / 2;
+
+      // Create root node
+      TreeNode *root = new TreeNode(nums[mid]);
+
+      // Recursively build left and right subtrees
+      root->left = buildBST(nums, left, mid - 1);
+      root->right = buildBST(nums, mid + 1, right);
+
+      return root;
 }
 
+TreeNode *sortedArrayToBST(vector<int> &nums)
+{
+      return buildBST(nums, 0, nums.size() - 1);
+}
 
+void print(TreeNode *root)
+{
+      queue<TreeNode *> q;
+      q.push(root);
+      q.push(NULL);
+
+      while (!q.empty())
+      {
+            TreeNode *temp = q.front();
+            q.pop();
+
+            if (temp == NULL)
+            {
+                  cout << ",";
+                  if (!q.empty())
+                  {
+                        q.push(NULL);
+                  }
+            }
+            else
+            {
+                  cout << temp->val << " ";
+                  if (temp->left)
+                  {
+                        q.push(temp->left);
+                  }
+
+                  if (temp->right)
+                  {
+                        q.push(temp->right);
+                  }
+            }
+      }
+}
+
+int main()
+{
+      vector<int> nums = {-10, -3, 0, 5, 9};
+      TreeNode *node = sortedArrayToBST(nums);
+      print(node);
+}
