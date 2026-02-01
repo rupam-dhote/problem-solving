@@ -31,7 +31,6 @@ vector<int> plusOne(vector<int> digits)
             ans.push_back(1);
             ans.push_back(0);
             i--;
-            return digits;
         }
         else
         {
@@ -47,7 +46,7 @@ vector<int> plusOne(vector<int> digits)
 }
 int main()
 {
-    vector<int> digits = {9, 9, 9};
+    vector<int> digits = {1, 9, 9, 9};
     printArr(digits);
     digits = plusOne(digits);
     printArr(digits);
