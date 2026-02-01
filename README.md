@@ -7,10 +7,10 @@ I use this repo to practice problem solving, improve logic, and prepare for codi
 
 ## 🚀 Purpose of This Repository
 
-- Practice DSA regularly  
-- Improve problem-solving skills  
-- Prepare for technical interviews  
-- Maintain clean and well-structured solutions  
+- Practice DSA regularly
+- Improve problem-solving skills
+- Prepare for technical interviews
+- Maintain clean and well-structured solutions
 - Track my LeetCode progress
 
 ---
@@ -39,6 +39,7 @@ I use this repo to practice problem solving, improve logic, and prepare for codi
 
 All problems are taken from **LeetCode**.  
 Each solution includes:
+
 - Problem statement (short description)
 - Approach / logic
 - Time & space complexity
@@ -49,7 +50,15 @@ Each solution includes:
 ## 💻 Languages Used
 
 - C++
+
 ---
 
+## 📁 Current Folder Structure
 
+```text
+DSA/
+│
+├── Arrays/
+├── Strings/
 
+```
