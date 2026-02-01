@@ -58,7 +58,7 @@ Each solution includes:
 ```text
 DSA/
 │
-├── Arrays/
-├── Strings/
+├── Array/
+├── String/
 
 ```
