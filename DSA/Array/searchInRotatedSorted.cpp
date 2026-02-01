@@ -66,14 +66,14 @@ int searchTarget(vector<int> &nums, int target)
 
             if (firsthalf != -1)
                   return firsthalf;
-            if (secondhalf != -1)
+            else
                   return secondhalf;
       }
       return binarySearch(nums, 0, n - 1, target);
 }
 int main()
 {
-      vector<int> nums = {4, 5, 6, 7, 0, 1, 2, 3};
+      vector<int> nums = {0, 1, 2, 3};
       cout << searchTarget(nums, 2);
       return 0;
 }
