@@ -7,63 +7,58 @@
 // Every close bracket has a corresponding open bracket of the same type.
 
 // -------------- NOT SOLVED -----------------
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
+#include <stack>
 using namespace std;
 
-bool isValidBracket(string s){
-    if(s.size()==1) return false;
-    bool flagPara=true;
-    bool flagSqu=true;
-    bool flagCur=true;
-   
-    for(int i=0;i<s.size();i++){
-      switch (s[i])
-       {
-       case '(':
-            flagPara=false;
-            break;
-       case ')':
-           if(!flagPara&&flagSqu&&flagCur){
-            flagPara=true;
-           }
-           else{
-            return false;
-           }
-            break;
-       case '[':
-            flagSqu=false;
-            break;
-       case ']':
-           if(!flagSqu){
-            flagSqu=true;
-           }
-           else{
-            return false;
-           }
-            break;
-       case '{':
-            flagCur=false;
-            break;
-       case '}':
-           if(flagPara&&flagSqu&&!flagCur){
-            flagCur=true;
-           }
-           else{
-            return false;
-           }
-            break;
-       
-       }
-    }
+bool isValidBracket(string s)
+{
+     if (s.size() == 1)
+     {
+          return false;
+     }
 
-    return true;
+     if (s[0] == ']' || s[0] == '}' || s[0] == ')')
+     {
+          return false;
+     }
+
+     stack<char> st;
+
+     for (int i = 0; i < s.size(); i++)
+     {
+          if (s[i] == '(' || s[i] == '[' || s[i] == '{')
+          {
+               st.push(s[i]);
+          }
+          else
+          {
+               char ch = 'a';
+               if (!st.empty())
+                    ch = st.top();
+               if (s[i] == ')' && ch == '(' || s[i] == ']' && ch == '[' || s[i] == '}' && ch == '{')
+               {
+                    st.pop();
+               }
+               else
+               {
+                    st.push(s[i]);
+               }
+          }
+     }
+     if (st.empty())
+     {
+          return true;
+     }
+
+     return false;
 }
 
+int main()
+{
+     string s = "([])";
+     cout << isValidBracket(s);
 
-int main(){
-      string s="([])";
-      cout<<isValidBracket(s);
-
-      return 0;
+     return 0;
 }
