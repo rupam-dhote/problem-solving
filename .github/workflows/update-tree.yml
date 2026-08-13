@@ -21,7 +21,7 @@ jobs:
 
       - name: Generate folder structure
         run: |
-          tree -a \
+          tree -d -a \
           -I ".git|node_modules|dist|build|.next|coverage|.vercel|package-lock.json|yarn.lock" \
           > tree.txt
 
