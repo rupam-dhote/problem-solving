@@ -86,10 +86,11 @@ Each solution generally includes:
 │   └── workflows
 └── DSA
     ├── Array
+    ├── LinkList
     ├── Math
     └── String
 
-7 directories
+8 directories
 ```
 
 <!-- TREE_END -->
