@@ -12,10 +12,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/YOUR_USERNAME/DSA?style=for-the-badge">
-  <img src="https://img.shields.io/github/repo-size/YOUR_USERNAME/DSA?style=for-the-badge">
-  <img src="https://img.shields.io/github/languages/top/YOUR_USERNAME/DSA?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/YOUR_USERNAME/DSA?style=for-the-badge">
+  <img src="https://img.shields.io/github/last-commit/rupam-dhote/problem-solving?style=for-the-badge">
+  <img src="https://img.shields.io/github/repo-size/rupam-dhote/problem-solving?style=for-the-badge">
+  <img src="https://img.shields.io/github/languages/top/rupam-dhote/problem-solving?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/rupam-dhote/problem-solving?style=for-the-badge">
 </p>
 
 ---
@@ -79,6 +79,7 @@ Each solution generally includes:
 > **Automatically updated using GitHub Actions**
 
 <!-- TREE_START -->
+
 ```text
 .
 ├── .github
@@ -149,6 +150,7 @@ Each solution generally includes:
 
 7 directories, 59 files
 ```
+
 <!-- TREE_END -->
 
 ---
