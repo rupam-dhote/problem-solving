@@ -79,7 +79,6 @@ Each solution generally includes:
 > **Automatically updated using GitHub Actions**
 
 <!-- TREE_START -->
-
 ```text
 .
 ├── .github
@@ -91,7 +90,6 @@ Each solution generally includes:
 
 7 directories
 ```
-
 <!-- TREE_END -->
 
 ---
