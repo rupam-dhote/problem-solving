@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/github/last-commit/rupam-dhote/problem-solving?style=for-the-badge">
   <img src="https://img.shields.io/github/repo-size/rupam-dhote/problem-solving?style=for-the-badge">
   <img src="https://img.shields.io/github/languages/top/rupam-dhote/problem-solving?style=for-the-badge">
-  [![License](https://img.shields.io/github/license/rupam-dhote/problem-solving?style=for-the-badge)](LICENSE)
+  <img src="https://img.shields.io/github/license/rupam-dhote/problem-solving?style=for-the-badge">
 </p>
 
 ---
@@ -86,11 +86,10 @@ Each solution generally includes:
 │   └── workflows
 └── DSA
     ├── Array
-    ├── LinkList
     ├── Math
     └── String
 
-8 directories
+7 directories
 ```
 
 <!-- TREE_END -->
