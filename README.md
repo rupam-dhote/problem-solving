@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/github/last-commit/rupam-dhote/problem-solving?style=for-the-badge">
   <img src="https://img.shields.io/github/repo-size/rupam-dhote/problem-solving?style=for-the-badge">
   <img src="https://img.shields.io/github/languages/top/rupam-dhote/problem-solving?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/rupam-dhote/problem-solving?style=for-the-badge">
+  [![License](https://img.shields.io/github/license/rupam-dhote/problem-solving?style=for-the-badge)](LICENSE)
 </p>
 
 ---
@@ -79,6 +79,7 @@ Each solution generally includes:
 > **Automatically updated using GitHub Actions**
 
 <!-- TREE_START -->
+
 ```text
 .
 ├── .github
@@ -90,6 +91,7 @@ Each solution generally includes:
 
 7 directories
 ```
+
 <!-- TREE_END -->
 
 ---
