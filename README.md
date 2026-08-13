@@ -1,64 +1,103 @@
-# 📘 DSA & LeetCode Problem Solving
+<!-- Animated Header -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=Data+Structures+%26+Algorithms;LeetCode+Problem+Solving;C%2B%2B+Solutions;Interview+Preparation" alt="Typing SVG" />
+</p>
 
-This repository contains my **Data Structures and Algorithms (DSA)** solutions based on **LeetCode problems**.  
-I use this repo to practice problem solving, improve logic, and prepare for coding interviews.
+<h1 align="center">📘 DSA & LeetCode Problem Solving</h1>
 
----
+<p align="center">
+  A collection of my <b>Data Structures & Algorithms</b> solutions solved on <b>LeetCode</b> using <b>C++</b>.
+  <br>
+  This repository documents my coding journey and interview preparation.
+</p>
 
-## 🚀 Purpose of This Repository
-
-- Practice DSA regularly
-- Improve problem-solving skills
-- Prepare for technical interviews
-- Maintain clean and well-structured solutions
-- Track my LeetCode progress
-
----
-
-## 🧠 Topics Covered
-
-- Arrays
-- Strings
-- Linked List
-- Stack & Queue
-- Hashing
-- Recursion
-- Sorting & Searching
-- Two Pointers
-- Sliding Window
-- Binary Search
-- Greedy Algorithms
-- Bit Manipulation
-- Trees
-- Graphs
-- Dynamic Programming
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/YOUR_USERNAME/DSA?style=for-the-badge">
+  <img src="https://img.shields.io/github/repo-size/YOUR_USERNAME/DSA?style=for-the-badge">
+  <img src="https://img.shields.io/github/languages/top/YOUR_USERNAME/DSA?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/YOUR_USERNAME/DSA?style=for-the-badge">
+</p>
 
 ---
 
-## 🧩 Problem Source
+# 🚀 Why This Repository?
 
-All problems are taken from **LeetCode**.  
-Each solution includes:
+This repository helps me:
 
-- Problem statement (short description)
-- Approach / logic
-- Time & space complexity
-- Clean and readable code
+- 🧠 Practice Data Structures & Algorithms daily
+- 💡 Improve problem-solving skills
+- 💼 Prepare for coding interviews
+- 📈 Track my LeetCode journey
+- 📚 Maintain clean and optimized C++ solutions
 
 ---
 
-## 💻 Languages Used
+# 🧩 Topics Covered
+
+- ✅ Arrays
+- ✅ Strings
+- ✅ Linked List
+- ✅ Stack
+- ✅ Queue
+- ✅ Hashing
+- ✅ Recursion
+- ✅ Sorting
+- ✅ Searching
+- ✅ Binary Search
+- ✅ Two Pointers
+- ✅ Sliding Window
+- ✅ Trees
+- ✅ Graphs
+- ✅ Greedy Algorithms
+- ✅ Dynamic Programming
+- ✅ Bit Manipulation
+
+---
+
+# 📖 Problem Source
+
+Problems are solved from **LeetCode**.
+
+Each solution generally includes:
+
+- ✔️ Problem Link
+- ✔️ Approach
+- ✔️ Optimized Code
+- ✔️ Time Complexity
+- ✔️ Space Complexity
+
+---
+
+# 💻 Language
 
 - C++
 
 ---
 
-## 📁 Current Folder Structure
+# 📂 Folder Structure
+
+> **Automatically updated using GitHub Actions**
+
+<!-- TREE_START -->
 
 ```text
-DSA/
-│
-├── Array/
-├── String/
-
+Loading...
 ```
+
+<!-- TREE_END -->
+
+---
+
+# ⭐ Repository Goals
+
+- Solve LeetCode problems consistently
+- Learn multiple approaches
+- Write clean and optimized code
+- Build strong DSA fundamentals
+- Prepare for MAANG & Product-Based Companies
+
+---
+
+<p align="center">
+⭐ If you find this repository helpful, don't forget to Star it!
+</p>

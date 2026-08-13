@@ -1,0 +1,52 @@
+name: Update README Tree
+
+on:
+  push:
+    branches:
+      - main # Change if your default branch is different
+
+permissions:
+  contents: write
+
+jobs:
+  update-tree:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install tree
+        run: sudo apt-get update && sudo apt-get install -y tree
+
+      - name: Generate folder structure
+        run: |
+          tree -a \
+          -I ".git|node_modules|dist|build|.next|coverage|.vercel|package-lock.json|yarn.lock" \
+          > tree.txt
+
+      - name: Update README
+        run: |
+          awk '
+          BEGIN {inside=0}
+          /<!-- TREE_START -->/ {
+            print
+            print "```text"
+            while ((getline line < "tree.txt") > 0)
+              print line
+            print "```"
+            inside=1
+            next
+          }
+          /<!-- TREE_END -->/ {
+            inside=0
+          }
+          !inside {print}
+          ' README.md > README_new.md
+
+          mv README_new.md README.md
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update folder tree"
