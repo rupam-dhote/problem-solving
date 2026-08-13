@@ -1,68 +1,9 @@
 .
 ├── .github
 │   └── workflows
-│       └── update-tree.yml
-├── .gitignore
-├── DSA
-│   ├── Array
-│   │   ├── 3sum.cpp
-│   │   ├── BSTfromSortedArray.cpp
-│   │   ├── binarySearch.cpp
-│   │   ├── consecutiveOnes.cpp
-│   │   ├── containDup.cpp
-│   │   ├── findDisAppear.cpp
-│   │   ├── findUnique.cpp
-│   │   ├── firstAndLast.cpp
-│   │   ├── highestAltitude.cpp
-│   │   ├── intersectionOfArray2.cpp
-│   │   ├── intesectionOfArray.cpp
-│   │   ├── kIndices.cpp
-│   │   ├── majority.cpp
-│   │   ├── mergeSortedArray.cpp
-│   │   ├── missingVal.cpp
-│   │   ├── moveZeros.cpp
-│   │   ├── pascalTriangle.cpp
-│   │   ├── pascalsTriagleII.cpp
-│   │   ├── plusOne.cpp
-│   │   ├── profitloss.cpp
-│   │   ├── rangeSumQuery.cpp
-│   │   ├── ranges.cpp
-│   │   ├── removeDupInsorted.cpp
-│   │   ├── removeElement.cpp
-│   │   ├── rotateK.cpp
-│   │   ├── runingSum.cpp
-│   │   ├── searchInRotatedSorted.cpp
-│   │   ├── searchInsert.cpp
-│   │   ├── sortArrayByparity.cpp
-│   │   ├── sortByParityII.cpp
-│   │   ├── twoSum.cpp
-│   │   ├── valueDiff.cpp
-│   │   └── volumeOfWater.cpp
-│   ├── Math
-│   │   ├── maxAchievableNumber.cpp
-│   │   ├── numberToZero.cpp
-│   │   ├── palindromNum.cpp
-│   │   └── reverseInteger.cpp
-│   └── String
-│       ├── analog.cpp
-│       ├── differenceInString.cpp
-│       ├── excelColumn.cpp
-│       ├── excelTitle.cpp
-│       ├── firstOcuurence.cpp
-│       ├── firstUnique.cpp
-│       ├── fizzbuzz.cpp
-│       ├── isPalindrome.cpp
-│       ├── isValidBracket.cpp
-│       ├── isomorphic.cpp
-│       ├── largestNum.cpp
-│       ├── lastWordLength.cpp
-│       ├── logestCommonPrefix.cpp
-│       ├── reverseString.cpp
-│       ├── reverseovels.cpp
-│       ├── stringRomanTOint.cpp
-│       ├── subsequence.cpp
-│       └── wordPattern.cpp
-├── README.md
-└── tree.txt
+└── DSA
+    ├── Array
+    ├── Math
+    └── String
 
-7 directories, 59 files
+7 directories
