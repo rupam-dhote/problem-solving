@@ -3,7 +3,8 @@
 │   └── workflows
 └── DSA
     ├── Array
+    ├── LinkList
     ├── Math
     └── String
 
-7 directories
+8 directories
